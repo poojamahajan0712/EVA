@@ -17,7 +17,7 @@ class Net(nn.Module):
             nn.ReLU(),
             nn.BatchNorm2d(64)
             
-        ) #i/p=32, output_size = 30  Rf 3 Jout - 1
+        ) 
 
         # Layer 1
         self.c2 = nn.Sequential(
@@ -25,14 +25,14 @@ class Net(nn.Module):
             nn.MaxPool2d(2, 2),
             nn.BatchNorm2d(128),
             nn.ReLU()
-            ) # i/p=30,output_size = 32 RF 5 Jout -1
+            ) 
         self.r1 = nn.Sequential(
             nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3), padding=1, bias=False), 
             nn.BatchNorm2d(128),
             nn.ReLU(),
             nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3), padding=1, bias=False), 
             nn.BatchNorm2d(128),
-           # nn.ReLU()
+          
             )
         # Layer 2
         self.c3 = nn.Sequential(
@@ -48,14 +48,14 @@ class Net(nn.Module):
             nn.MaxPool2d(2, 2),
             nn.BatchNorm2d(512),
             nn.ReLU()
-            ) # i/p=30,output_size = 32 RF 5 Jout -1
+            )
         self.r2 = nn.Sequential(
             nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 3), padding=1, bias=False), 
             nn.BatchNorm2d(512),
             nn.ReLU(),
             nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 3), padding=1, bias=False), 
             nn.BatchNorm2d(512),
-            #nn.ReLU()
+            
             )
         
         self.pool1 = nn.MaxPool2d(4, 2)
