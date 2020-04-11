@@ -1,5 +1,5 @@
 # EVA
-All assignments of EVA TSAI
+EVA TSAI
 S11<br>
 Write a code which uses this new ResNet Architecture for Cifar10:<br>
 PrepLayer - Conv 3x3 s1, p1) >> BN >> RELU [64k]<br>
