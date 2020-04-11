@@ -70,12 +70,12 @@ class Net(nn.Module):
         x = self.c1(x)
         x = self.c2(x)
         
-        #iden=x
+        
         out=self.r1(x)
         out=out+x
         x=F.relu(out)
         
-        #x=x+self.r1(x)
+        
         x = self.c3(x)
         x = self.c4(x)
         
@@ -83,7 +83,7 @@ class Net(nn.Module):
         out=out+x
         x=F.relu(out)
         
-        #x=x+self.r2(x)
+        
         x = self.pool1(x)
         x = self.fc(x)
         x = x.view(-1, 10)
