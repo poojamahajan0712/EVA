@@ -1,0 +1,4 @@
+classes=1
+train=data/testingcust/testingcust.txt
+valid=data/testingcust/testingcust.txt
+names=data/testingcust/testingcust.names
