@@ -1,1 +1,17 @@
 
+Training Custom Dataset on Colab for YoloV3<br>
+Refer to this Colab File: LINK (Links to an external site.)<br>
+Refer to this GitHub Repo https://github.com/theschoolofai/YoloV3 <br>
+Collect a dataset of 500 images and annotate them. Please select a class for which you can find a YouTube video as well. Steps are explained in the readme.md file on GitHub.
+Once done:<br>
+Download a very small (~10-30sec) video from youtube which shows your class. <br>
+Use ffmpeg (Links to an external site.) to extract frames from the video. <br>
+Upload on your drive (alternatively you could be doing all of this on your drive to save upload time)<br>
+Inter on these images using detect.py file. **Modify** detect.py file if your file names do not match the ones mentioned on GitHub. <br>
+`python detect.py --conf-thres 0.3 --output output_folder_name`<br>
+Use ffmpeg (Links to an external site.) to convert the files in your output folder to video<br>
+Upload the video to YouTube. <br>
+Share the link to your GitHub project with the steps as mentioned above<br>
+Share the link of your YouTube video<br>
+Share the link of your YouTube video on LinkedIn, Instagram, etc! You have no idea how much you'd love people complimenting you! 
+ 
